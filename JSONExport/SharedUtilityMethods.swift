@@ -32,7 +32,6 @@ func propertyTypeName(_ value : AnyObject, lang: LangModel) -> String
     }else if value is NSNull{
         name = lang.genericType
     }
-    
     return name
 }
 

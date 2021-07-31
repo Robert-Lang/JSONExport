@@ -129,6 +129,7 @@
     }
   ],
   "dataTypes": {
+    "copyType": "NSString",
     "stringType": "NSString",
     "boolType": "BOOL",
     "floatType": "CGFloat",

@@ -16,6 +16,7 @@ class DataType{
 	var intType : String!
 	var longType : String!
 	var stringType : String!
+    var copyType : String!
 
 
 	/**
@@ -28,7 +29,8 @@ class DataType{
 		floatType = dictionary["floatType"] as? String
 		intType = dictionary["intType"] as? String
 		longType = dictionary["longType"] as? String
-		stringType = dictionary["stringType"] as? String
+        stringType = dictionary["stringType"] as? String
+        copyType = dictionary["copyType"] as? String
 	}
 
 	/**
@@ -55,9 +57,12 @@ class DataType{
 		if longType != nil{
 			dictionary["longType"] = longType
 		}
-		if stringType != nil{
-			dictionary["stringType"] = stringType
-		}
+        if stringType != nil{
+            dictionary["stringType"] = stringType
+        }
+        if copyType != nil{
+            dictionary["copyType"] = copyType
+        }
 		return dictionary
 	}
 

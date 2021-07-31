@@ -109,7 +109,13 @@ class Property : Equatable{
         
         string = string.replacingOccurrences(of: varType, with: type)
         string = string.replacingOccurrences(of: varName, with: nativeName)
+        string = string.replacingOccurrences(of: "strong) NSString", with: "  copy) NSString")
+        string = string.replacingOccurrences(of: "strong) NSObject", with: "  copy) NSString")
+        
         string = string.replacingOccurrences(of: jsonKeyName, with: jsonName)
+        
+        
+        
         return string
     }
     
